@@ -13,5 +13,19 @@ sfHover = function() {
 }
 
 
+function changerImage() {
+ 
+document.getElementById("image1").innerHTML="<p> Prout <p>";
+
+ //"./Images/9203531.jpg"
+}
+ 
+function remettreImage() {
+
+document.getElementById("image1").src="./Images/ampoule_a_decanter.jpg";
+
+}
+
+
 
 // http://www.pompage.net/traduction/deroulants
