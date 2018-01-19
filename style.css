@@ -101,6 +101,10 @@ section.tableauimg img {
     width : 150px; /*largeur de l'image */
     height : 150px; /*hauteur de l'image */
 }
-
-
+td p {
+position :absolute; 
+margin-top : -50px;
+margin-left :10px;
+text-align :center;
+}
 

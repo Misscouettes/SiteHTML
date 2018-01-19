@@ -13,16 +13,39 @@ sfHover = function() {
 }
 
 
-function changerImage() {
- 
-document.getElementById("image1").innerHTML="<p> Prout <p>";
+function changerImage(n) {
 
- //"./Images/9203531.jpg"
+switch(n)  {
+case 1 :
+    var elem=document.getElementById("image1");
+    elem.style.opacity='0.1';
+    document.getElementById("message1").innerHTML="Ampoule";
+    break;
+case 2 :
+    var elem=document.getElementById("image2");
+    elem.style.opacity='0.1';
+    document.getElementById("message2").innerHTML="Ballon";
+    break;
+
+
 }
  
-function remettreImage() {
+}
+function remettreImage(n) {
 
-document.getElementById("image1").src="./Images/ampoule_a_decanter.jpg";
+switch(n) {
+case 1 :    
+    var elem =document.getElementById("image1");
+    elem.style.opacity='1';
+    document.getElementById("message1").innerHTML="";
+    break;
+case 2 :    
+    var elem =document.getElementById("image2");
+    elem.style.opacity='1';
+    document.getElementById("message2").innerHTML="";
+    break;
+
+}
 
 }
 
