@@ -62,7 +62,7 @@ nav li ul /* Sous-listes */
 nav li ul ul /*Sous-sous liste */
 
 {
-    margin    : -22px 0 0 160px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+    margin    : -20px 0 0 150px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
 }
 
 nav li:hover ul ul, nav li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
@@ -78,6 +78,10 @@ nav li:hover ul, nav li li:hover ul, nav li.sfhover ul, nav li li.sfhover ul  /*
 {
     left: auto; /* Repositionnement normal */
 
+}
+/**Corps de la page*/
+section#corps {
+    margin-top : 40px;
 }
 
 /**Article */

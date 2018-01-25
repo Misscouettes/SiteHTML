@@ -26,7 +26,56 @@ case 2 :
     elem.style.opacity='0.1';
     document.getElementById("message2").innerHTML="Ballon";
     break;
-
+case 3 :
+    var elem=document.getElementById("image3");
+    elem.style.opacity='0.1';
+    document.getElementById("message3").innerHTML="Becher";
+    break;
+case 4 :
+    var elem=document.getElementById("image4");
+    elem.style.opacity='0.1';
+    document.getElementById("message4").innerHTML="Burette graduée";
+    break;
+case 5 :
+    var elem=document.getElementById("image5");
+    elem.style.opacity='0.1';
+    document.getElementById("message5").innerHTML="Cristallisoir";
+    break;
+case 6 :
+    var elem=document.getElementById("image6");
+    elem.style.opacity='0.1';
+    document.getElementById("message6").innerHTML="Eprouvette graduée";
+    break;
+case 7 :
+    var elem=document.getElementById("image7");
+    elem.style.opacity='0.1';
+    document.getElementById("message7").innerHTML="Erlenmeyer";
+    break;
+case 8 :
+    var elem=document.getElementById("image8");
+    elem.style.opacity='0.1';
+    document.getElementById("message8").innerHTML="Pipette jaugée";
+    break;
+case 9 :
+    var elem=document.getElementById("image9");
+    elem.style.opacity='0.1';
+    document.getElementById("message9").innerHTML="Pisette";
+    break;
+case 10 :
+    var elem=document.getElementById("image10");
+    elem.style.opacity='0.1';
+    document.getElementById("message10").innerHTML="Spatule";
+    break;
+case 11 :
+    var elem=document.getElementById("image11");
+    elem.style.opacity='0.1';
+    document.getElementById("message11").innerHTML="Trompe à eau";
+    break;
+case 12 :
+    var elem=document.getElementById("image12");
+    elem.style.opacity='0.1';
+    document.getElementById("message12").innerHTML="Tube à essai";
+    break;
 
 }
  
@@ -44,6 +93,58 @@ case 2 :
     elem.style.opacity='1';
     document.getElementById("message2").innerHTML="";
     break;
+case 3 :    
+    var elem =document.getElementById("image3");
+    elem.style.opacity='1';
+    document.getElementById("message3").innerHTML="";
+    break;
+case 4 :    
+    var elem =document.getElementById("image4");
+    elem.style.opacity='1';
+    document.getElementById("message4").innerHTML="";
+    break;
+case 5 :    
+    var elem =document.getElementById("image5");
+    elem.style.opacity='1';
+    document.getElementById("message5").innerHTML="";
+    break;
+case 6 :    
+    var elem =document.getElementById("image6");
+    elem.style.opacity='1';
+    document.getElementById("message6").innerHTML="";
+    break;
+case 7 :    
+    var elem =document.getElementById("image7");
+    elem.style.opacity='1';
+    document.getElementById("message7").innerHTML="";
+    break;
+case 8 :    
+    var elem =document.getElementById("image8");
+    elem.style.opacity='1';
+    document.getElementById("message8").innerHTML="";
+    break;
+case 9 :    
+    var elem =document.getElementById("image9");
+    elem.style.opacity='1';
+    document.getElementById("message9").innerHTML="";
+    break;
+case 10 :    
+    var elem =document.getElementById("image10");
+    elem.style.opacity='1';
+    document.getElementById("message10").innerHTML="";
+    break;
+case 11 :    
+    var elem =document.getElementById("image11");
+    elem.style.opacity='1';
+    document.getElementById("message11").innerHTML="";
+    break;
+
+case 12 :    
+    var elem =document.getElementById("image12");
+    elem.style.opacity='1';
+    document.getElementById("message12").innerHTML="";
+    break;
+
 
 }
 
