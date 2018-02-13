@@ -160,6 +160,8 @@ article#articlequizz {
 section.quiz {
   height:70%;
   width:75%;
+  margin-top: 5%;
+
 }
 
 img.imqz    {
