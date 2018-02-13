@@ -78,68 +78,70 @@ case 12 :
     break;
 
 }
- 
+
 }
+
+
 function remettreImage(n) {
 
 switch(n) {
-case 1 :    
+case 1 :
     var elem =document.getElementById("image1");
     elem.style.opacity='1';
     document.getElementById("message1").innerHTML="";
     break;
-case 2 :    
+case 2 :
     var elem =document.getElementById("image2");
     elem.style.opacity='1';
     document.getElementById("message2").innerHTML="";
     break;
-case 3 :    
+case 3 :
     var elem =document.getElementById("image3");
     elem.style.opacity='1';
     document.getElementById("message3").innerHTML="";
     break;
-case 4 :    
+case 4 :
     var elem =document.getElementById("image4");
     elem.style.opacity='1';
     document.getElementById("message4").innerHTML="";
     break;
-case 5 :    
+case 5 :
     var elem =document.getElementById("image5");
     elem.style.opacity='1';
     document.getElementById("message5").innerHTML="";
     break;
-case 6 :    
+case 6 :
     var elem =document.getElementById("image6");
     elem.style.opacity='1';
     document.getElementById("message6").innerHTML="";
     break;
-case 7 :    
+case 7 :
     var elem =document.getElementById("image7");
     elem.style.opacity='1';
     document.getElementById("message7").innerHTML="";
     break;
-case 8 :    
+case 8 :
     var elem =document.getElementById("image8");
     elem.style.opacity='1';
     document.getElementById("message8").innerHTML="";
     break;
-case 9 :    
+case 9 :
     var elem =document.getElementById("image9");
     elem.style.opacity='1';
     document.getElementById("message9").innerHTML="";
     break;
-case 10 :    
+case 10 :
     var elem =document.getElementById("image10");
     elem.style.opacity='1';
     document.getElementById("message10").innerHTML="";
     break;
-case 11 :    
+case 11 :
     var elem =document.getElementById("image11");
     elem.style.opacity='1';
     document.getElementById("message11").innerHTML="";
     break;
 
-case 12 :    
+case 12 :
     var elem =document.getElementById("image12");
     elem.style.opacity='1';
     document.getElementById("message12").innerHTML="";
@@ -149,6 +151,30 @@ case 12 :
 }
 
 }
+
+
+
+function Affscore() {
+    var score = 0;
+    var reponse = document.getElementsByTagName("SECTION");
+    var nbrep=reponse.length;
+    var i = 0;
+    while(i< nbrep) {
+        var nbinput= reponse[i].getElementsByTagName("INPUT");
+        var Tinput = nbinput.length;
+        i++;
+        var j=0;
+        while(j<Tinput){
+            if( (nbinput[j].type == "radio") && (nbinput[j].checked) ) {
+                score = score + parseInt(nbinput[j].value,10);
+
+                }
+            j++;
+
+          }
+        }
+document.getElementById("affichscore").innerHTML=score;
+    }
 
 
 

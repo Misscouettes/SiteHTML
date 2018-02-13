@@ -1,16 +1,17 @@
 body {
     background-image:linear-gradient(100deg, #2C8791, #AF7CD1 );
     height : 100%;
-    width : 90%;
+    width : 95%;
 }
 
 
 
 /*FENETRE DE NAVIGATION */
 nav {
-    position: relative;
+    position: fixed; /* la barre ne disparait pas */
     width : 70%; /*largeur */
     left : 20%;
+    top : 0%; /*colle la barre en haut */
     height : 60px; /*hauteur*/
     font-weight : bold; /* texte en gras*/
     font-family : Arial; /* police : Arial*/
@@ -32,8 +33,7 @@ nav a
 {
 
     display : block; /* transforme en bloc les liens (plus facile à manipuler) */
-    border-radius: 10px; /*bord arrondit*
-    /* padding : 0;  */
+    border-radius: 10px; /*bord arrondit*/
     color : #fff; /* couleur du texte */
     text-decoration : none; /* enleve les souligne */
     width : 150px; /* largeur */
@@ -81,27 +81,34 @@ nav li:hover ul, nav li li:hover ul, nav li.sfhover ul, nav li li.sfhover ul  /*
 }
 /**Corps de la page*/
 section#corps {
-    margin-top : 40px;
+  margin-top : 40px;
 }
 /**********/
 /**Article */
 
+section#articleblabla {
+  float : left;
+  width: 40%;
 
-section#corps article {
-    text-indent: 20px;
-    float : left;
-    width: 40%;
-    border: 1px solid black;
 }
+
+section#articleblabla article {
+    text-indent: 20px;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+
 
 /*****************************/
 /*TABLEAU */
 
 section.tableauimg {
-    width : 500px; /*largeur du tableau */
-    height : 600px; /*hauteur du tableau */
+    width : 440px; /*largeur du tableau */
+    height : 300px; /*hauteur du tableau */
     border: 1px solid black;
-    margin-left : 40%; /*pour le placer à droite du texte */
+    margin-left: 45%;
+    margin-top: 5%;
+
 }
 
 section.tableauimg img {
@@ -135,3 +142,27 @@ section#coursverre img {
   width : 200px; /*largeur de l'image */
   height : 200px; /*hauteur de l'image */
 }
+
+/**Quizz **/
+
+article#articlequizz {
+    position : fixed; /* pour que la barre reste en haut meme si on descend la fenetre */
+    width : 30%; /*largeur */
+    height : 60px; /*hauteur*/
+    background-color: rgba(0, 0, 255, 0.1); /*un arrière plan bleu à 10% de transparence */
+    font-family : Arial; /* police : Arial*/
+    font-size : 20px; /* taille de la police : 12px */
+    top : 100px ;
+    left : 550px;
+
+}
+
+section.quiz {
+  height:70%;
+  width:75%;
+}
+
+img.imqz    {
+           height:50%;
+           width:35%;
+         }
