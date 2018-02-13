@@ -2,20 +2,26 @@ body {
     background-image:linear-gradient(100deg, #2C8791, #AF7CD1 );
     height : 100%;
     width : 95%;
+    font-family : Arial; /* police : Arial*/
+    font-size : 15px; /* taille de la police : 12px */
+    margin-left: 0;
 }
 
 
 
 /*FENETRE DE NAVIGATION */
+
+nav img {
+    margin-left: 10%;
+}
 nav {
     position: fixed; /* la barre ne disparait pas */
-    width : 70%; /*largeur */
-    left : 20%;
+    width : 100%; /*largeur */
     top : 0%; /*colle la barre en haut */
     height : 60px; /*hauteur*/
     font-weight : bold; /* texte en gras*/
-    font-family : Arial; /* police : Arial*/
     font-size : 20px; /* taille de la police : 12px */
+    background-color: rgba(186,164,164);
 
 }
 
@@ -37,7 +43,7 @@ nav a
     color : #fff; /* couleur du texte */
     text-decoration : none; /* enleve les souligne */
     width : 150px; /* largeur */
-    background-color : rgba(255,255,255,0.3);
+    background-color : rgba(129,117,117);
 
 }
 
@@ -150,16 +156,12 @@ article#articlequizz {
     width : 30%; /*largeur */
     height : 60px; /*hauteur*/
     background-color: rgba(0, 0, 255, 0.1); /*un arrière plan bleu à 10% de transparence */
-    font-family : Arial; /* police : Arial*/
-    font-size : 20px; /* taille de la police : 12px */
     top : 100px ;
     left : 550px;
 
 }
 
 section.quiz {
-  height:70%;
-  width:75%;
   margin-top: 5%;
 
 }
@@ -167,4 +169,7 @@ section.quiz {
 img.imqz    {
            height:50%;
            width:35%;
-         }
+}
+section.quiz header h2 {
+  text-align: center;
+}
