@@ -173,3 +173,11 @@ img.imqz    {
 section.quiz header h2 {
   text-align: center;
 }
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}
