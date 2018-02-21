@@ -1,7 +1,6 @@
 body {
     background-image:linear-gradient(100deg, #2C8791, #AF7CD1 );
-    height : 100%;
-    width : 95%;
+    width : 100%;
     font-family : Arial; /* police : Arial*/
     font-size : 15px; /* taille de la police : 12px */
     margin-left: 0;
@@ -87,7 +86,7 @@ nav li:hover ul, nav li li:hover ul, nav li.sfhover ul, nav li li.sfhover ul  /*
 }
 /**Corps de la page*/
 section#corps {
-  margin-top : 40px;
+  margin-top : 5%;
 }
 /**********/
 /**Article */
@@ -95,7 +94,7 @@ section#corps {
 section#articleblabla {
   float : left;
   width: 40%;
-
+  margin-left : 5%;
 }
 
 section#articleblabla article {
@@ -109,10 +108,8 @@ section#articleblabla article {
 /*TABLEAU */
 
 section.tableauimg {
-    width : 440px; /*largeur du tableau */
-    height : 300px; /*hauteur du tableau */
     border: 1px solid black;
-    margin-left: 45%;
+    margin-left: 50%;
     margin-top: 5%;
 
 }
@@ -148,7 +145,42 @@ section.coursverre img {
   width : 200px; /*largeur de l'image */
   height : 200px; /*hauteur de l'image */
 }
+/*********************/
+/**Cours général **/
+section#defchimie {
+  margin-top : 5%;
+}
+section#defchimie article {
+  float : left;
+  margin-left : 5%;
+  text-indent: 20px;
+  width : 75%;
+}
+section#defchimie img {
+  margin-top: 3%;
+  margin-left : 5%;
+}
 
+section#general {
+  margin-top : 5%;
+  margin-left : 5%;
+  text-indent: 20px;
+}
+
+section#defverrerie {
+  margin-top : 5%;
+  margin-left : 5%;
+  text-indent: 20px;
+}
+section#defverrerie article {
+  float : right;
+  width : 60%;
+}
+section#defverrerie img {
+  border-radius: 10px; /*bord arrondit*/
+
+}
+/*******************/
 /**Quizz **/
 
 article#articlequizz {
@@ -156,8 +188,8 @@ article#articlequizz {
     width : 30%; /*largeur */
     height : 60px; /*hauteur*/
     background-color: rgba(0, 0, 255, 0.1); /*un arrière plan bleu à 10% de transparence */
-    top : 100px ;
-    left : 550px;
+    top : 10% ;
+    left : 40%;
 
 }
 
@@ -167,17 +199,9 @@ section.quiz {
 }
 
 img.imqz    {
-           height:50%;
-           width:35%;
+  height:50%;
+   width:35%;
 }
 section.quiz header h2 {
   text-align: center;
-}
-
-iframe:focus {
-    outline: none;
-}
-
-iframe[seamless] {
-    display: block;
 }
