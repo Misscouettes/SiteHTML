@@ -129,20 +129,20 @@ text-align :center;
 }
 /**********************/
 /*Cours verre */
-section#coursverre {
+section.coursverre {
   margin-top: 5%;
   border: 1px solid black;
 }
-section#coursverre article {
+section.coursverre article {
   float : left;
   width: 40%;
   margin-left: 5%;
   text-indent: 20px;
 }
-section#coursverre header {
+section.coursverre header {
   text-align: center;
 }
-section#coursverre img {
+section.coursverre img {
   border-radius: 10px; /*bord arrondit*/
   margin-left: 10%;
   width : 200px; /*largeur de l'image */
