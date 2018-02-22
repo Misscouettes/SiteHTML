@@ -137,6 +137,19 @@ article#articleduhaut {
 /*****************************/
 /*TABLEAU */
 
+@media screen and (max-width: 850px) {
+      table {
+        display: none;
+      }
+      img {
+        display: none;
+      }
+      body {
+        font-size : 10px;
+      }
+
+    }
+
 table.tableauimg {
   text-decoration : none; /* enleve les souligne */
 }
