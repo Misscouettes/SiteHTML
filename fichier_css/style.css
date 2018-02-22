@@ -1,0 +1,272 @@
+body {
+    /*background-image:linear-gradient(100deg, #2C8791, #AF7CD1 ); */
+    background-image :url(../Images/testavoir.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size : 100%;
+    background-color:  #d0d3d4 ;
+    width : 100%;
+    font-family : Arial; /* police : Arial*/
+    font-size : 15px; /* taille de la police : 12px */
+    margin-left: 0;
+    font-weight : bold;
+    /*color :  #e8f8f5   ;*/
+}
+header {
+  text-align: center;
+
+}
+p#slide {
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%}
+
+   to {margin-left: 0%;
+     width: 100%;}
+}
+/*FENETRE DE NAVIGATION */
+
+nav img {
+    margin-left: 10%;
+    width: 60px;
+    height: 50px;
+
+}
+nav {
+    position: fixed; /* la barre ne disparait pas */
+    width : 100%; /*largeur */
+    top : 0%; /*colle la barre en haut */
+    height : 60px; /*hauteur*/
+    font-weight : bold; /* texte en gras*/
+    font-size : 20px; /* taille de la police : 12px */
+    background-color:  #7fb3d5     ;
+
+}
+
+nav, nav ul {
+    padding : 0; /* pas de marge intérieure */
+    margin : 0; /* et extérieur -> sinon les menus sont décalés dans la barre */
+    list-style : none; /* enlève les points de la liste */
+    line-height : 30px; /* augmente la hauteur des menus */
+    text-align : center; /* texte centré*/
+
+
+}
+
+nav a
+{
+
+    display : block; /* transforme en bloc les liens (plus facile à manipuler) */
+    border-radius: 10px; /*bord arrondit*/
+    color : #fff; /* couleur du texte */
+    text-decoration : none; /* enleve les souligne */
+    width : 150px; /* largeur */
+    background-color :  #1f618d ;
+
+}
+
+nav li /* Éléments des listes */
+
+{
+    float : left; /*mettre les elements a la suite des autres à gauche*/
+    border-right : 1px solid #fff; /* bordure blanche à droite de chaque élément */
+    border-top : 1px solid #fff;
+    border-radius: 10px; /*bord arrondit*/
+
+}
+
+nav li ul /* Sous-listes */
+{
+    position: absolute; /* Position absolue */
+    width: 144px; /* Largeur des sous-listes */
+    left: -999em; /* Hop, on envoie loin du champ de vision */
+}
+
+
+nav li ul ul /*Sous-sous liste */
+
+{
+    margin    : -20px 0 0 150px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */
+}
+
+nav li:hover ul ul, nav li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+
+{
+    left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+
+}
+
+
+nav li:hover ul, nav li li:hover ul, nav li.sfhover ul, nav li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+
+{
+    left: auto; /* Repositionnement normal */
+
+}
+
+/**Article */
+
+article#articleblabla {
+  margin-top : 2%;
+  float : left;
+  width: 40%;
+  margin-left : 5%;
+  text-indent: 20px;
+  border: 1px solid black;
+  background-color:   #ECE9E9 ;
+}
+
+article#articledubas {
+  text-align: center;
+  margin-top: 10%;
+  background-color:   #ECE9E9 ;
+
+}
+article#articleduhaut {
+  margin-top: 7%;
+  text-align: center;
+  background-color: #ECE9E9;
+}
+
+/*****************************/
+/*TABLEAU */
+
+table.tableauimg {
+  text-decoration : none; /* enleve les souligne */
+}
+table.tableauimg {
+    margin-left: 50%;
+    margin-top: 5%;
+
+}
+
+table.tableauimg img {
+    width : 150px; /*largeur de l'image */
+    height : 150px; /*hauteur de l'image */
+    border-radius: 10px; /*bord arrondit*/
+
+}
+table.tableauimg td p {
+position :absolute;
+margin-top : -50px;
+margin-left :10px;
+text-align :center;
+}
+
+
+/**********************/
+/*Cours verre */
+
+article.coursverre {
+  margin-top: 10%;
+  background-color: #ECE9E9;
+}
+article.coursverre p {
+  float : left;
+  width: 40%;
+  margin-left: 5%;
+  text-indent: 20px;
+}
+article.coursverre img {
+  border-radius: 10px; /*bord arrondit*/
+  margin-left: 20%;
+  margin-top: -2%;
+  width : 200px; /*largeur de l'image */
+  height : 200px; /*hauteur de l'image */
+}
+
+section.coursverre img {
+  border-radius: 10px; /*bord arrondit*/
+  margin-left: 20%;
+  width : 200px; /*largeur de l'image */
+  height : 200px; /*hauteur de l'image */
+}
+section.coursverre {
+  margin-top: 5%;
+  background-color: #ECE9E9;
+}
+section.coursverre p {
+  float : left;
+  width: 40%;
+  margin-left: 5%;
+  text-indent: 20px;
+}
+
+
+/*********************/
+/**Cours général **/
+
+article#defchimie{
+  margin-top : 5%;
+  float : left;
+  margin-left : 5%;
+  text-indent: 20px;
+  width : 75%;
+  background-color: #ECE9E9;
+  border-radius: 10px; /*bord arrondit*/
+}
+
+img#model {
+  margin-top: 6%;
+  margin-left : 5%;
+
+}
+
+article#general {
+  background-color: #ECE9E9;
+  margin-top : 15%;
+  text-indent: 20px;
+  border-radius: 10px; /*bord arrondit*/
+}
+
+
+article#defverrerie {
+  margin-top : 7%;
+  text-indent: 20px;
+  float : right;
+  width : 60%;
+  background-color: #ECE9E9;
+  border-radius: 10px; /*bord arrondit*/
+}
+
+
+img#gif {
+  border-radius: 10px; /*bord arrondit*/
+  margin-top: 5%;
+}
+/*******************/
+/**Quizz **/
+
+
+article#articlequizz {
+    position : fixed; /* pour que la barre reste en haut meme si on descend la fenetre */
+    width : 30%; /*largeur */
+    background-color: #ECE9E9;
+    top : 20% ;
+    left : 50%;
+    border-radius: 10px; /*bord arrondit*/
+
+
+}
+article#articlequizz header {
+  background-color: rgba(0, 0, 255, 0.5); /*un arrière plan bleu à 10% de transparence */
+  text-align:center;
+}
+section.quiz {
+  margin-top: 5%;
+
+}
+
+img.imqz    {
+  height:50%;
+   width:35%;
+}
+section.quiz header h2 {
+  text-align: center;
+}
